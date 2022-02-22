@@ -1,0 +1,49 @@
+{ "bolt":
+    {
+        "accuracy": 35,
+        "damage": 75,
+        "shots": 1
+},
+"burst":
+    {
+        "accuracy": 60,
+        "damage": 11,
+        "shots": 3
+},
+"gd_missl":
+    {
+        "accuracy": 45,
+        "damage": 99,
+        "shots": 1
+},
+"inf_rifle":
+    {
+        "accuracy": 17,
+        "damage": 22,
+        "shots": 5
+},
+"pump":
+    {
+        "accuracy": 40,
+        "damage": 15,
+        "shots": 7
+},
+"scar":
+    {
+        "accuracy": 30,
+        "damage": 33,
+        "shots": 4
+},
+"tactical":
+    {
+        "accuracy": 35,
+        "damage": 6,
+        "shots": 12
+},
+"p90":
+    {
+        "accuracy": 44,
+        "damage": 4,
+        "shots": 20
+}
+}

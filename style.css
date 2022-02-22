@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("img/bg/bg1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#gamble {
+    position: absolute;
+    visibility: visible;
+    width: 400px;
+    height: 40px;
+    background-color: salmon;
+    left: 100px;
+    top: 10px;
+}
+
+#gamble.battle{
+    position: absolute;
+    width: 400px;
+    height: 40px;
+    background-color: salmon;
+    left: 100px;
+    visibility: hidden;
+}
+
+#img{
+    position: absolute;
+    height: 300px;
+    top: 300px;
+    visibility: visible;
+}
+#img.battle{
+    position: absolute;
+    left: 20px;
+    visibility: visible;
+}
+
+#img.dead{
+    position: absolute;
+    left: 20px;
+
+    transition: width 2s, height 2s, transform 2s;
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    opacity:0;transition:5s;
+}
+
+#img.invis{
+    visibility: hidden;
+}
+
+#enemyImg{
+    position: absolute;
+    right: 50px;
+    max-height: 500px;
+    visibility: visible;
+}
+
+#enemyImg.invis{
+    position: absolute;
+    visibility: hidden;
+}
+
+#enemyImg.battle{
+    position: absolute;
+    right: 50px;
+    max-height: 500px;
+    visibility: visible;
+}
+
+#enemyImg.dead {
+    position: absolute;
+    right: 50px;
+    max-height: 500px;
+    visibility: visible;
+
+    transition: width 2s, height 2s, transform 2s;
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    opacity:0;transition:5s;
+  }
+
+#shoot{
+    position: absolute;
+    width: 400px;
+    height: 40px;
+    visibility: hidden;
+    background-color: rgb(236, 22, 22);
+}
+
+#shoot.battle{
+    position: absolute;
+    visibility: visible;
+    top: 500px;
+    width: 400px;
+    height: 40px;
+    background-color: rgb(236, 22, 22);
+}
+
+#shoot.shoot{
+    position: absolute;
+    visibility: hidden;
+}
+
+#battle{
+    position: absolute;
+    visibility: visible;
+    width: 400px;
+    height: 40px;
+    bottom: 20px;
+    background-color: darkcyan;
+}
+
+#battle.battle{
+    position: absolute;
+    width: 400px;
+    height: 40px;
+    visibility: hidden;
+    background-color: darkcyan;
+}
+
+#weaponEnemy{
+    position: absolute;
+    visibility: hidden;
+    height: 200px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#weaponEnemy.shoot{
+    position: absolute;
+    visibility: visible;
+    top: 350px;
+    right: 300px;
+}
+
+#hpBlue{
+    position: absolute;
+    left: 20px;
+    visibility: hidden;
+    font-size: 6vw;
+    font-weight: bold;
+    color: #000;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+
+#vBucksTxt{
+    position: absolute;
+    right: 30px;
+    top: 1mm;
+    font-size: 15mm;
+    font-weight: bold;
+    color: #000;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+
+#hpBlue.battle{
+    position: absolute;
+    visibility: visible;
+    left: 20px;
+    top: 100px;
+}
+
+#hpRed{
+    position: absolute;
+    right: 20px;
+    visibility: hidden;
+    font-size: 6vw;
+    font-weight: bold;
+    color: #000;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+
+#hpRed.battle{
+    position: absolute;
+    visibility: visible;
+    right: 20px;
+    top: 100px;
+}
+
+#dmgBlue{
+    position: absolute;
+    color: rgb(37, 197, 202);
+    font-size: 40px;
+    visibility: hidden;
+    left: 80px;
+    top: 330px;
+}
+
+#dmgBlue.hit{
+    position: absolute;
+    visibility: visible;
+    top: 200px;
+    opacity:0;transition: 2s;
+}
+
+#dmgRed{
+    position: absolute;
+    color: rgb(37, 197, 202);
+    font-size: 40px;
+    visibility: hidden;
+    right: 150px;
+    top: 330px;
+}
+
+#dmgRed.hit{
+    position: absolute;
+    visibility: visible;
+    top: 200px;
+    opacity:0;transition: 2s;
+}
+
+#sound{
+    position: absolute;
+    left: 100px;
+    bottom: 20px;
+}
+
+#newWeaponBtn{
+    position: absolute;
+    bottom: 150px;
+    height: 40px;
+    width: 400px;
+    background-color: salmon;
+    visibility: hidden;
+}
+
+#newWeaponBtn.vis{
+    visibility: visible;
+}
+
+#accept{
+    position: absolute;
+    bottom: 150px;
+    height: 40px;
+    width: 400px;
+    background-color: salmon;
+    visibility: hidden;
+}
+
+#accept.vis{
+    visibility: visible;
+}
